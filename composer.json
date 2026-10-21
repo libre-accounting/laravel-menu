@@ -1,49 +1,53 @@
 {
-   "name": "akaunting/laravel-menu",
-   "description": "Menu and sidebar management package for Laravel",
-   "keywords": [
-       "laravel",
-       "menu",
-       "navigation",
-       "sidebar",
-       "bootstrap"
-   ],
-   "license": "MIT",
-   "authors": [
+    "name": "libre-accounting/laravel-menu",
+    "description": "Menu and sidebar management package for Laravel (Libre Accounting fork of akaunting/laravel-menu with Laravel 11+ support)",
+    "keywords": [
+        "laravel",
+        "menu",
+        "navigation",
+        "sidebar",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/libre-accounting/laravel-menu",
+    "license": "MIT",
+    "authors": [
         {
             "name": "Denis Duliçi",
             "email": "info@akaunting.com",
             "homepage": "https://akaunting.com",
             "role": "Developer"
         }
-   ],
-   "require": {
-        "php": "^8.0",
-        "illuminate/config": "^9.0|^10.0",
-        "illuminate/support": "^9.0|^10.0",
-        "illuminate/view": "^9.0|^10.0",
-        "laravelcollective/html": "^6.3"
-   },
-   "require-dev": {
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/config": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/view": "^11.0|^12.0|^13.0",
+        "rdx/laravelcollective-html": "^6.8"
+    },
+    "replace": {
+        "akaunting/laravel-menu": "self.version"
+    },
+    "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.12",
         "mockery/mockery": "^1.5",
-        "orchestra/testbench": "^7.4|^8.0",
-        "phpunit/phpunit": "^9.5"
-   },
-   "autoload": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "autoload": {
         "psr-4": {
             "Akaunting\\Menu\\": "src"
         },
         "files": [
             "src/helpers.php"
         ]
-   },
+    },
     "autoload-dev": {
         "psr-4": {
             "Akaunting\\Menu\\Tests\\": "tests"
         }
     },
-   "extra": {
+    "extra": {
         "laravel": {
             "providers": [
                 "Akaunting\\Menu\\Provider"
@@ -52,7 +56,7 @@
                 "Menu": "Akaunting\\Menu\\Facade"
             }
         }
-   },
-   "minimum-stability": "dev",
-   "prefer-stable": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

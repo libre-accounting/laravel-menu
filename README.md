@@ -1,5 +1,10 @@
 # Menu and sidebar management package for Laravel
 
+> **Libre Accounting fork.** This is [libre-accounting/laravel-menu](https://github.com/libre-accounting/laravel-menu), a fork of
+> [akaunting/laravel-menu](https://github.com/akaunting/laravel-menu) 3.1.2 that only changes the Composer manifest: it installs on
+> Laravel 11, 12 and 13 (PHP 8.2+), and it depends on `rdx/laravelcollective-html` instead of the abandoned `laravelcollective/html`.
+> The `Akaunting\Menu` namespace and the code are unchanged, and the package `replace`s `akaunting/laravel-menu`.
+
 ![Downloads](https://img.shields.io/packagist/dt/akaunting/laravel-menu)
 ![Tests](https://img.shields.io/github/actions/workflow/status/akaunting/laravel-menu/tests.yml?label=tests)
 [![StyleCI](https://github.styleci.io/repos/180763610/shield?style=flat&branch=master)](https://styleci.io/repos/180763610)
